@@ -165,7 +165,65 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+.idea/
+
+# Временные файлы редактора/IDE
+*.tmp
+*.swp
+*~
+.~lock.*
+
+# Автогенерируемые файлы GigaIDE (если есть)
+.giga/
+.ide/
+.metadata/
+.gigaide/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Логи и дампы
+
+*.dump
+
+# Конфиги с чувствительными данными
+
+.env.local
+*.secret
+config.json
+
+# Артефакты сборки (если проект компилируемый)
+/dist/
+/build/
+/out/
+/bin/service.py
+bin/service.py
+
+# Файлы парсера Lustrof
+
+# Исключаем только основной JSON-файл с данными
+lustrofpars/lustrofpars/spiders/interier_products.json
+
+# Кеши
+**/httpcache/
+**/scrapy_cache/
+
+# Временные файлы
+
+*.bak
+
+# Системные файлы
+
+
+# Среда Python
+.venv/
+
+*.pyc
+
+
+# Локальные настройки
+settings_local.py
 
 # Ruff stuff:
 .ruff_cache/

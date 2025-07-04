@@ -1,0 +1,5 @@
+webdriver-manager
+scrapy
+ipython
+tqdm
+scrapy-fake-useragent
